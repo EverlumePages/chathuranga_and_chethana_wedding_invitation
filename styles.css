@@ -1,0 +1,245 @@
+:root{--ivory:#fff8f2;--blush:#f7dfe7;--pink:#d985a4;--rose:#8b3655;--gold:#b39862;--ink:#402f39;--serif:'Cormorant Garamond',Georgia,serif;--si:'Noto Serif Sinhala',serif;--sans:'Noto Sans Sinhala',sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.9}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible{outline:3px solid var(--rose);outline-offset:6px}button{color:inherit}h1,h2,h3,p{margin:0}h2{font-family:var(--si);font-size:clamp(24px,3vw,34px);font-weight:400;line-height:1.8}h3{font-weight:400}img{display:block;max-width:100%}[hidden]{display:none!important}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.lotus-icon{width:85px;height:65px;color:var(--gold)}.lotus-icon.small{width:55px;height:45px}.eyebrow{font:500 11px/1.6 var(--sans);letter-spacing:3px;color:var(--rose)}.english-note{font:italic 25px/1.55 var(--serif);color:#765b66}.serif{font-family:var(--serif)}.text-button{border:0;background:none;font:14px/1.5 var(--serif);border-bottom:1px solid #b3986270;padding:10px 0;color:var(--rose)}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;background:var(--rose);color:white;border:1px solid var(--rose);padding:15px 25px;font-size:15px;min-height:54px;transition:background .2s,transform .2s}.button span{font:17px var(--serif)}.button:hover{background:#712a44;transform:translateY(-2px)}.button.outline{background:transparent;color:var(--rose)}.button.outline:hover{background:var(--blush)}.sample-note{font:11px/1.8 var(--sans);color:#775f68;margin-top:25px}.js-only{display:none}.js .js-only{display:inline-flex}.opening{min-height:100svh;background:radial-gradient(ellipse at center,#fff7f2 0%,#f6dce4 65%,#edcad5 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 20px;position:relative;overflow:hidden}.opening:before,.opening:after{content:'';position:absolute;width:360px;height:660px;background:url('assets/lotus.webp') center/cover;opacity:.22;pointer-events:none;mask-image:linear-gradient(to left,#000,transparent)}.opening:before{left:-150px;bottom:-180px;transform:rotate(180deg)}.opening:after{right:-120px;top:-100px}.opening>.eyebrow{margin-bottom:28px;z-index:1}.envelope{position:relative;width:min(440px,86vw);height:430px;background:#fff9f2;box-shadow:0 24px 65px #85495f20,0 3px 10px #85495f15;perspective:1100px;border:1px solid #c7a87b70;isolation:isolate}.envelope:before{content:'';position:absolute;inset:13px;border:1px solid #b3986250;z-index:4;pointer-events:none}.envelope-inner{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:40px}.envelope-inner svg{margin:auto}.flap{position:absolute;inset:0;background:linear-gradient(130deg,#fff9f0,#f5e7de);transition:transform 1s ease,opacity 1s;z-index:1;overflow:hidden}.flap:after{content:'';position:absolute;inset:0;background:url('assets/petals.webp') center/cover;opacity:.12;mix-blend-mode:multiply}.flap-left{clip-path:polygon(0 0,50% 0,73% 48%,50% 100%,0 100%);transform-origin:left}.flap-right{clip-path:polygon(100% 0,50% 0,27% 48%,50% 100%,100% 100%);transform-origin:right;background:linear-gradient(230deg,#fffaf3,#f4e4df)}.envelope-caption{position:absolute;inset:42px 15px auto;text-align:center;z-index:2;transition:opacity .4s}.envelope-caption>p:first-child{font:10px var(--sans);letter-spacing:3px}.envelope-caption h1{font:46px/.96 var(--serif);color:var(--rose);margin-top:23px}.envelope-caption h1 span{display:block}.envelope-caption h1 i{display:block;font-size:30px;line-height:1.3;font-weight:400;color:var(--gold)}.envelope-date{margin-top:20px;font:12px var(--sans);letter-spacing:4px}.seal{position:absolute;left:50%;bottom:31px;transform:translateX(-50%) rotate(-8deg);width:80px;height:80px;border:4px double #c5877d;border-radius:47% 53% 49% 51%;background:radial-gradient(circle at 35% 25%,#f4c5b2,#cf8c83 65%,#b76e70);color:#713f43;box-shadow:2px 6px 10px #87465140,inset 0 0 0 3px #e1a392;z-index:5;transition:opacity .3s,scale .3s}.seal span{font:23px var(--serif);text-shadow:0 1px #f8d3c3}.seal svg{display:block;width:23px;height:17px;margin:0 auto}.seal:hover{scale:1.07}.unfold .flap-left{transform:rotateY(-125deg)}.unfold .flap-right{transform:rotateY(125deg)}.unfold .seal,.unfold .envelope-caption{opacity:0;pointer-events:none}.open-label{border:0;background:none;margin-top:29px;color:var(--rose);font-size:16px;z-index:1}.open-label span{display:block;font:9px var(--sans);letter-spacing:2.3px;margin-top:12px}.skip-opening{margin-top:17px;font-size:15px;z-index:1}.opening-foot{font:8px var(--sans);letter-spacing:2px;margin-top:30px;color:#826771}.film{height:100svh;position:relative;background:#edced6;display:flex;justify-content:center;align-items:center}.film-frame{height:100%;aspect-ratio:9/16;max-width:100%;position:relative}.film video{height:100%;width:100%;object-fit:contain}.film-copy{position:absolute;inset:27% 14% auto;text-align:center;color:var(--rose)}.film-copy .eyebrow{font-size:8px;letter-spacing:2px}.film-names{font:clamp(30px,6vh,53px)/1.05 var(--serif);margin:18px 0}.film-names span,.film-names i{display:block}.film-names i{font-size:.7em;color:var(--gold)}.film-copy>p:last-child{font:11px var(--sans);letter-spacing:2px}.film-controls{position:absolute;bottom:max(22px,env(safe-area-inset-bottom));left:20px;right:20px;display:flex;justify-content:center;align-items:center;gap:18px}.film-controls .text-button{background:#fff8f2e8;padding:12px;border:0}.film-controls .button{font-size:12px;padding:12px 15px}.film-controls .button span{font-size:14px}.topbar{height:83px;max-width:1280px;margin:auto;padding:0 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #b3986230}.monogram{font:30px var(--serif);color:var(--rose)}.monogram i{color:var(--gold);font-size:23px}.topbar-label{font:9px var(--sans);letter-spacing:3px;color:#856874}.hero{position:relative;min-height:820px;display:grid;place-items:center;overflow:hidden;background:#f9e9e8;max-width:1440px;margin:auto}.hero-art{position:absolute;inset:0;background-image:linear-gradient(90deg,#faeeea 15%,#faeeead9 45%,#faeeea00 75%),url('assets/lotus.webp');background-size:cover,auto 115%;background-position:center,right center;background-repeat:no-repeat}.hero-frame{position:absolute;inset:28px;border:1px solid #b3986260;pointer-events:none}.hero-frame:after{content:'';position:absolute;inset:7px;border:1px solid #b3986225}.hero-content{position:relative;text-align:center;width:75%;padding:65px 20px;margin-right:15%}.hero .lotus-icon{margin:28px 0 16px}.family{font-size:15px;color:#775b66}h1:focus{outline:none}.hero h1{font:clamp(65px,7.5vw,110px)/.95 var(--serif);font-weight:400;color:var(--rose);margin:32px 0 25px;letter-spacing:-2px}.hero h1 span{display:block}.hero h1 i{display:block;font-size:.5em;font-weight:400;line-height:1.15;color:var(--gold)}.sinhala-names{font-family:var(--si);font-size:21px}.fine-divider{display:flex;align-items:center;gap:15px;justify-content:center;margin:28px auto;max-width:180px;color:var(--gold)}.fine-divider:before,.fine-divider:after{content:'';height:1px;width:60px;background:#b3986260}.hero-date{font:16px var(--sans);letter-spacing:4px}.hero-location{font:11px var(--sans);letter-spacing:3px;margin-top:15px;text-transform:uppercase}.scroll-cue{font:8px var(--sans);letter-spacing:2px;display:block;margin-top:40px;color:#81626c}.scroll-cue span{display:block;font-size:22px;margin-top:10px}.section-pad{padding:95px 7%;text-align:center}.section-heading h2,.invitation-wording h2,.rsvp-section h2{margin:16px 0}.invitation-wording{max-width:850px;margin:auto}.sinhala-body{max-width:630px;margin:24px auto;font-size:18px;line-height:2.2}.invitation-wording .english-note{max-width:530px;margin:20px auto 30px}.day-section{background:#f9edea;position:relative}.day-section:before{content:'';position:absolute;inset:0;background:url('assets/pattern.webp') center/420px;opacity:.035;pointer-events:none}.day-layout{position:relative;display:grid;grid-template-columns:310px 1fr;gap:85px;max-width:820px;margin:50px auto 0;align-items:center}.date-card{background:var(--ivory);border:1px solid #b3986265;padding:35px 24px;outline:1px solid #b3986230;outline-offset:-9px}.date-number{font:110px/1.1 var(--serif);color:var(--rose);display:block;margin:10px 0 0}.date-month{font:30px var(--serif)}.date-card>p:not([class]){font-size:14px}.date-card .text-button{margin-top:14px;font-size:18px}.date-card .fine-divider{margin:20px auto}.timeline{list-style:none;text-align:left;margin:0;padding:0}.timeline li{position:relative;display:grid;grid-template-columns:88px 1fr;gap:30px;padding:0 0 32px}.timeline li:last-child{padding-bottom:0}.timeline li:before{content:'';position:absolute;width:1px;background:#b3986250;top:12px;bottom:-12px;left:101px}.timeline li:last-child:before{display:none}.timeline li:after{content:'';position:absolute;width:7px;height:7px;background:var(--gold);transform:rotate(45deg);left:98px;top:12px}.timeline time{font:17px/2 var(--serif);color:var(--rose)}.timeline h3{font-family:var(--si);font-size:18px;line-height:1.8}.timeline p{font:italic 19px/1.8 var(--serif);color:#80616d}.venue-section{display:grid;grid-template-columns:1fr 1.2fr;padding:0;max-width:1100px;margin:90px auto;border:1px solid #b3986250;background:#fffaf7}.venue-art{overflow:hidden;min-height:540px}.venue-art img{width:100%;height:100%;object-fit:cover}.venue-content{padding:60px 30px;align-self:center}.venue-content h2{font-size:25px;margin:15px 0}.venue-content svg{margin:16px 0}.venue-name{font:49px/1.1 var(--serif);color:var(--rose)}.venue-suffix{font:italic 25px var(--serif);margin:7px 0 20px}.venue-content [data-address]{font:14px var(--sans);margin-bottom:26px}.venue-content .sample-note{font-size:10px}.rsvp-section{background:linear-gradient(145deg,#f8e6e9,#f5dde4);border-top:1px solid #b3986230;border-bottom:1px solid #b3986230}.rsvp-section .sinhala-body{max-width:550px}.rsvp-section .button{margin-top:30px}.contact-note{font:11px var(--sans);color:#775563;margin-top:20px}.closing{padding:80px 25px 35px;text-align:center;background:var(--ivory)}.closing h2{font-size:24px;margin:20px 0 12px}.signature{font:italic 38px var(--serif);color:var(--rose);margin:35px 0 16px}.closing .eyebrow{font-size:8px}.mobile-actions{display:none}dialog{max-width:480px;width:calc(100% - 36px);padding:45px 30px;border:1px solid var(--gold);background:var(--ivory);color:var(--ink);text-align:center;box-shadow:0 20px 80px #402f3940}dialog::backdrop{background:#402f3980;backdrop-filter:blur(4px)}dialog h2{font-size:23px;margin:15px 0}dialog p{font:19px/1.6 var(--serif);margin:15px 0}dialog .button{margin-top:15px}.dialog-close{position:absolute;right:12px;top:7px;border:0;background:none;font-size:28px;min-width:44px;min-height:44px}.invitation-visible{animation:appear .7s ease both}@keyframes appear{from{opacity:0}to{opacity:1}}@media(min-width:1450px){body{background:#f5e9e7}#invitation{max-width:1440px;margin:auto;background:var(--ivory);box-shadow:0 0 90px #8b36550a}}@media(max-width:700px){.topbar{height:65px;padding:0 22px}.topbar-label{display:none}.hero{min-height:760px}.hero-art{background-image:linear-gradient(90deg,#faeeeadb,#faeeead4 55%,#faeeea44),url('assets/lotus.webp');background-size:cover,auto 100%;background-position:center,right}.hero-frame{inset:14px}.hero-content{width:100%;margin:0;padding:60px 26px}.hero-content>.eyebrow{font-size:8px;letter-spacing:2px}.hero h1{font-size:66px;letter-spacing:-1.5px}.hero .family{font-size:13px}.sinhala-names{font-size:19px}.hero-date{font-size:13px;letter-spacing:3px}.section-pad{padding:65px 26px}.eyebrow{font-size:9px;letter-spacing:2px}.english-note{font-size:23px}.day-layout{grid-template-columns:1fr;gap:45px;margin-top:35px}.date-card{max-width:300px;width:100%;margin:auto}.timeline{max-width:360px;margin:auto;width:100%}.timeline li{gap:27px;grid-template-columns:75px 1fr}.timeline li:before{left:89px}.timeline li:after{left:86px}.timeline h3{font-size:16px}.timeline time{font-size:16px}.venue-section{margin:45px 20px;display:block;padding:0}.venue-art{height:210px;min-height:0}.venue-art img{object-position:left 32%;width:100%;height:100%;object-fit:cover}.venue-content{padding:40px 20px}.venue-content h2{font-size:23px}.venue-name{font-size:42px}.venue-content .button{padding:12px 18px}.closing{padding-bottom:115px}.closing h2{font-size:21px}.signature{font-size:32px}.mobile-actions{position:fixed;bottom:0;left:0;right:0;z-index:10;display:flex;background:#fff8f2f5;border-top:1px solid #b3986250;padding:10px 16px max(10px,env(safe-area-inset-bottom));backdrop-filter:blur(10px);box-shadow:0 -5px 25px #402f3908}.mobile-actions>a,.mobile-actions>button{flex:1;text-align:center;font-size:13px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:48px;border:0;background:none}.mobile-actions>button{background:var(--rose);color:white}.mobile-actions span{font:12px var(--serif)}.film-controls{left:12px;right:12px;gap:10px}.film-controls .button{gap:5px}.opening{padding:25px 18px}.envelope{height:410px}.envelope-caption h1{font-size:43px}.opening:after{right:-240px}.opening:before{left:-250px}.opening-foot{font-size:7px}.rsvp-section .button{width:100%}}@media(max-width:375px){.hero h1{font-size:58px}.envelope-caption h1{font-size:38px}.envelope{height:390px}.hero{min-height:710px}.timeline h3{font-size:15px}.section-pad{padding-left:20px;padding-right:20px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+:root .hero-art{background:#faeeea url('assets/film-poster.webp') center/cover no-repeat}
+html:not(.js) .js-only{display:none!important}
+.hero-art:before{content:none}
+@media(max-width:700px){.hero-art:before{width:100%;opacity:.32;mask-image:linear-gradient(90deg,transparent,#000 85%)}.film-names{font-size:clamp(30px,5vh,44px)}}
+
+@font-face {
+  font-family: 'Maname Names';
+  src: url('images/maname.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.envelope-caption h1 [data-first-si],
+.envelope-caption h1 [data-second-si] {
+  font-family: 'Maname Names', var(--si);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+.envelope-caption h1 [data-second-si] {
+  margin-top: -0.35em;
+}
+.envelope-caption .seal { transition: transform .24s ease, opacity .24s ease; }
+.seal-breaking .envelope-caption .seal { transform: rotate(-18deg) scale(1.2); opacity: 0; pointer-events: none; }
+
+/* Portrait opening: vivid petal artwork with a quiet Sinhala name panel. */
+.opening {
+  justify-content: flex-start;
+  padding: 16px 18px 12px;
+  background: #f5e3e5;
+}
+.opening > .eyebrow, .opening-foot { display: none; }
+.opening::before, .opening::after { display: none; }
+.envelope {
+  flex: 0 0 auto;
+  width: min(440px, 100%);
+  height: clamp(490px, calc(100svh - 170px), 840px);
+  border-color: #b3986270;
+  background: #fff8f2;
+  box-shadow: 0 12px 38px #85495f25;
+  border-radius: 20px;
+}
+.envelope::before { inset: 10px; border-color: #fff8f2a0; border-radius: 13px; }
+.flap, .flap-right {
+  background: url('images/first_page.jpg') center / cover no-repeat;
+  border-radius: 19px;
+}
+.flap::after {
+  background: linear-gradient(180deg, #fff8f212, #fff8f208 65%, #fff8f225);
+  opacity: 1;
+  mix-blend-mode: normal;
+}
+.envelope-caption {
+  inset: 16% 11% auto;
+  padding: 30px 8px 28px;
+  border: 1px solid #fff8f2dc;
+  border-radius: 14px;
+  background: linear-gradient(160deg, #fff8f2b8, #ffe8ed99);
+  box-shadow: 0 8px 30px #6f244321, inset 0 0 0 1px #ffffff40;
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+}
+.envelope-caption > .opening-kicker {
+  font: 400 14px/1.9 var(--si);
+  letter-spacing: 0;
+  color: #785145;
+}
+.envelope-caption h1 {
+  font: 500 clamp(36px, 10vw, 49px)/1.65 var(--si);
+  letter-spacing: -.8px;
+  color: #792644;
+  margin: 17px 0 0;
+  text-shadow: 0 1px 0 #fff;
+}
+.envelope-caption h1 i {
+  font: 400 20px/1.6 var(--si);
+  color: #926b3a;
+  margin: 3px 0;
+}
+.opening-ornament { color: #a27c43; font-size: 21px; line-height: 1; margin-top: 14px; }
+.envelope-date { margin-top: 17px; font-size: 12px; letter-spacing: 3px; color: #694837; }
+.seal { bottom: 6%; width: 78px; height: 78px; }
+.open-label { margin-top: 16px; font-size: 15px; padding: 0 8px; }
+.open-label span { margin-top: 7px; font-size: 8px; }
+.skip-opening { margin-top: 6px; padding: 9px 0; min-height: 40px; font-size: 15px; }
+@media (max-width: 375px) {
+  .opening { padding: 12px 14px; }
+  .envelope-caption { left: 9%; right: 9%; padding-top: 23px; padding-bottom: 23px; }
+  .envelope-caption h1 { font-size: 37px; }
+}
+@media (max-height: 740px) {
+  .envelope-caption { top: 9%; padding-top: 24px; padding-bottom: 22px; }
+  .envelope-caption h1 { font-size: 37px; margin-top: 12px; }
+  .envelope-caption h1 i { font-size: 18px; }
+  .seal { bottom: 5%; width: 70px; height: 70px; }
+}
+.seal { padding: 8px 3px; }
+.seal span { display: block; white-space: nowrap; font-size: 21px; line-height: 1.3; }
+.seal svg { margin-top: 3px; }
+
+/* Small stationery embellishments, clear of the names and seal. */
+.opening-jewels { position: absolute; inset: 0; z-index: 3; pointer-events: none; transition: opacity .35s; }
+.unfold .opening-jewels { opacity: 0; }
+.pearl {
+  position: absolute; width: 13px; height: 13px; border-radius: 50%;
+  background: radial-gradient(circle at 32% 25%, #fff 0%, #fffdf5 22%, #f2e6db 50%, #c4aaa2 80%, #fff6e8 100%);
+  border: 1px solid #fffcf0b3;
+  box-shadow: 2px 4px 5px #71374842, inset -1px -1px 2px #9d7b6c30;
+}
+.pearl-one { top: 6%; left: 15%; width: 17px; height: 17px; }
+.pearl-two { top: 8.5%; left: 21%; width: 9px; height: 9px; }
+.pearl-three { top: 10%; right: 15%; }
+.pearl-four { bottom: 22%; left: 18%; width: 17px; height: 17px; }
+.pearl-five { bottom: 19%; left: 23%; width: 9px; height: 9px; }
+.pearl-six { bottom: 21%; right: 18%; width: 12px; height: 12px; }
+.loose-petal {
+  position: absolute; width: 23px; height: 40px;
+  border-radius: 85% 8% 75% 22%;
+  background: radial-gradient(ellipse at 20% 80%, #fff3e9 0%, #f4b3c5 45%, #cf668e 80%, #b14d77 100%);
+  border: 1px solid #ffd7e2a0;
+  box-shadow: 3px 5px 7px #71374830, inset 2px 1px 4px #fff4ec90;
+}
+.petal-one { top: 5%; right: 24%; transform: rotate(48deg); }
+.petal-two { bottom: 24%; right: 16%; transform: rotate(-28deg); }
+.petal-three { bottom: 9%; left: 14%; transform: rotate(65deg); width: 18px; height: 32px; }
+
+/* Keep the complete opening invitation centered in its floral frame. */
+.opening { justify-content: center; }
+.envelope { height: auto; min-height: clamp(590px, calc(100svh - 32px), 840px); display: grid; place-items: center; padding: 55px 9%; }
+.envelope-caption { position: relative; inset: auto; width: 100%; padding: 24px 12px 18px; display: flex; flex-direction: column; align-items: center; z-index: 4; }
+.envelope-caption h1 { margin-top: 12px; font-size: clamp(35px, 10vw, 46px); line-height: 1.5; }
+.envelope-caption .opening-ornament { margin-top: 10px; }
+.envelope-caption .envelope-date { margin-top: 12px; }
+.envelope-caption .seal { position: relative; left: auto; bottom: auto; transform: rotate(-8deg); flex-shrink: 0; width: 70px; height: 70px; margin: 20px 0 0; }
+.envelope-caption .open-label { margin-top: 14px; padding: 3px 0; font-size: 14px; }
+.envelope-caption .skip-opening { margin-top: 7px; font-size: 14px; min-height: 44px; }
+.pearl-four { bottom: 15%; left: 4%; }
+.pearl-five { bottom: 12%; left: 6%; }
+.pearl-six { bottom: 18%; right: 4%; }
+.petal-two { bottom: 25%; right: 2%; }
+.envelope-caption { padding-bottom: 66px; isolation: isolate; }
+.envelope-caption > :not(.card-lotus-corner) { position: relative; z-index: 1; }
+.envelope-caption .card-lotus-corner {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  width: min(55%, 165px);
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(0 3px 3px #71374818);
+}
+@media (max-width: 375px) {
+  .envelope { padding: 45px 7%; }
+  .envelope-caption { inset: auto; padding: 22px 10px 66px; }
+  .envelope-caption h1 { font-size: 35px; }
+}
+
+/* Matching floral backdrops for the wedding-day and RSVP sections. */
+.day-section,
+.rsvp-section {
+  background: linear-gradient(180deg, #fff8f25c, #fff8f2b3 28%, #fff8f2b3 80%, #fff8f266),
+    url('images/hero_background.jpg') center / cover no-repeat;
+}
+.day-section { padding-bottom: clamp(170px, 22vw, 210px); }
+.day-section::before { content: none; }
+.day-section .date-card {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+.day-section .section-heading,
+.day-section .day-layout { position: relative; }
+
+/* Compact typography and stronger contrast, preserving the floral backdrop. */
+.day-section .section-heading h2 { margin: 8px 0 4px; line-height: 1.5; font-weight: 500; color: #38212f; }
+.day-section .english-note { line-height: 1.3; font-weight: 500; color: #573744; }
+.day-section .eyebrow { font-weight: 500; color: #762640; }
+.day-section .day-layout { margin-top: 12px; row-gap: 12px; }
+.day-section .date-card { padding-top: 6px; padding-bottom: 0; }
+.day-section .date-number { margin-top: 4px; line-height: .95; font-weight: 500; color: #792644; }
+.day-section .date-month { line-height: 1.15; font-weight: 500; color: #38212f; }
+.day-section .date-card .fine-divider { margin: 10px auto; }
+.day-section .date-card .text-button { margin-top: 4px; padding: 8px 0; min-height: 44px; font-weight: 600; color: #762640; }
+.day-section .timeline li { padding-bottom: 18px; }
+.day-section .timeline li:last-child { padding-bottom: 0; }
+.day-section .timeline h3 { line-height: 1.5; font-weight: 500; color: #38212f; }
+.day-section .timeline p { line-height: 1.35; margin-top: 2px; font-weight: 500; color: #573744; }
+.day-section .timeline time { line-height: 1.6; font-weight: 600; color: #762640; }
+
+/* Display the complete lotus flame animation in place of the floral crop. */
+.venue-art { display: grid; place-items: center; min-height: 340px; padding: 20px; }
+.venue-art img { width: 100%; max-width: 422px; height: auto; object-fit: contain; object-position: center; }
+@media (max-width: 700px) {
+  .venue-art { height: auto; min-height: 0; padding: 20px 24px 0; }
+}
+
+/* Rounded main invitation card with the animated lotus background. */
+.hero-art video { width: 100%; height: 100%; object-fit: cover; object-position: center; pointer-events: none; }
+.hero-art::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg,#fff8f220,#fff8f260 40%,#fff8f250 75%,#fff8f210); }
+.hero { margin: 16px auto 0; width: calc(100% - 32px); border-radius: 24px; overflow: hidden; }
+.hero-frame { border-radius: 16px; }
+.hero-frame::after { border-radius: 12px; }
+.hero-content { margin-right: 0; }
+@media (max-width: 700px) {
+  .hero-content { padding-left: 20px; padding-right: 20px; }
+  .hero h1 { font-size: clamp(44px, 12vw, 66px); letter-spacing: -1px; }
+}
+
+/* Opposite lotus corners frame the closing message. */
+.closing { position: relative; isolation: isolate; overflow: hidden; }
+.closing::before,
+.closing::after {
+  content: '';
+  position: absolute;
+  width: clamp(130px, 38vw, 220px);
+  aspect-ratio: 1;
+  background: url('assets/lotus-corner.png') center / contain no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+.closing::before { top: 5px; right: 5px; transform: rotate(180deg); }
+.closing::after { bottom: 5px; left: 5px; }
+.closing > * { position: relative; z-index: 1; }
+@media (min-width: 701px) {
+  .closing { padding-bottom: 90px; }
+}
+
+/* Soft, once-per-visit entrances without changing section spacing. */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 650ms ease, transform 750ms cubic-bezier(.2,.65,.3,1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.scroll-reveal.reveal-bloom { transform: translateY(18px) scale(.97); }
+.scroll-reveal.is-revealed { opacity: 1; transform: none; }
+.scroll-reveal:focus-within { opacity: 1; transform: none; transition-delay: 0ms; }
+@media (prefers-reduced-motion: reduce), print {
+  .scroll-reveal, .scroll-reveal.reveal-bloom { opacity: 1; transform: none; transition: none; }
+}

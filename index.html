@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="si">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chathuranga & Chethana — A Lotus Wedding</title>
+  <meta name="description" content="A heartfelt invitation to celebrate the wedding of Chathuranga and Chethana. A lotus-inspired celebration in Sri Lanka.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta property="og:title" content="Chathuranga & Chethana — A Lotus Wedding"><meta property="og:description" content="Together with our families, we invite you to our beautiful beginning."><meta property="og:image" content="assets/lotus.webp">
+  <meta name="theme-color" content="#F7DFE7">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Sans+Sinhala:wght@400;500&family=Noto+Serif+Sinhala:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="lotus" viewBox="0 0 100 70"><path d="M50 61C28 43 37 18 50 5c14 14 22 38 0 56ZM50 61C24 64 12 43 10 24c24 1 38 16 40 37Zm0 0c26 3 38-18 40-37-24 1-38 16-40 37ZM50 61C27 75 7 60 3 46c20-4 37 4 47 15Zm0 0c23 14 43-1 47-15-20-4-37 4-47 15Z" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol></defs></svg>
+  <section id="opening" class="opening" hidden aria-label="Open your wedding invitation">
+    <p class="eyebrow" lang="en">A LOVE IN BLOOM</p>
+    <div class="envelope" id="envelope">
+      <div class="flap flap-left"></div><div class="flap flap-right"></div>
+      <div class="envelope-caption"><p class="opening-kicker">අපේ මංගල ඇරයුම</p><h1 lang="si"><span data-first-si>චතුරංග</span><i>සහ</i><span data-second-si>චේතනා</span></h1><div class="opening-ornament" aria-hidden="true">✧</div><p class="envelope-date" lang="en" data-short-date>20 · 08 · 2027</p>
+        <img class="card-lotus-corner" src="assets/lotus-corner.png" alt="" aria-hidden="true" width="1254" height="1254">
+        <button class="seal" id="open-seal" aria-label="ආරාධනය විවෘත කරන්න · Open invitation"><span>C <i>&</i> C</span><svg><use href="#lotus"/></svg></button>
+        <button class="open-label" id="open-label">ආරාධනය විවෘත කරන්න<span lang="en">TOUCH THE SEAL TO OPEN</span></button>
+        <button class="text-button skip-opening" id="skip-opening" lang="en">Go straight to the invitation <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="opening-jewels" aria-hidden="true"><span class="pearl pearl-one"></span><span class="pearl pearl-two"></span><span class="pearl pearl-three"></span><span class="pearl pearl-four"></span><span class="pearl pearl-five"></span><span class="pearl pearl-six"></span><span class="loose-petal petal-one"></span><span class="loose-petal petal-two"></span><span class="loose-petal petal-three"></span></div>
+      
+    </div>
+    
+    
+    <p class="opening-foot" lang="en">WITH LOVE, FROM OUR FAMILIES TO YOURS</p>
+  </section>
+  <section id="film" class="film" hidden aria-label="Invitation film">
+    <div class="film-frame"><video id="invitation-video" playsinline muted preload="none" poster="assets/couple-poster.webp" aria-label="Couple in a lotus pond"></video></div>
+    <div class="film-controls"><button id="sound" class="text-button" lang="en" aria-pressed="false">Sound off</button><button id="skip-film" class="button">ආරාධනය බලන්න <span lang="en">View invitation →</span></button></div>
+  </section>
+  <div id="invitation">
+    <header class="topbar"><a href="#home" class="monogram" lang="en">C <i>&</i> C</a><span class="topbar-label" lang="en">THE WEDDING INVITATION</span><button id="replay" class="text-button js-only" lang="en">Replay opening ↗</button></header>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-art" aria-hidden="true"><video id="hero-video" muted loop playsinline preload="none" poster="assets/film-poster.webp" tabindex="-1"></video></div><div class="hero-frame"></div>
+        <div class="hero-content"><p class="eyebrow" lang="en">TWO HEARTS. ONE BEAUTIFUL BEGINNING.</p><svg class="lotus-icon"><use href="#lotus"/></svg><p class="family" data-copy="familySi">දෙපාර්ශ්වයේ ආදරණීය පවුල් සමඟ</p>
+          <h1 id="invitation-heading" tabindex="-1" lang="en"><span data-first>Chathuranga</span><i>&</i><span data-second>Chethana</span></h1>
+          <p class="sinhala-names" id="sinhala-names">චතුරංග සහ චේතනා</p><div class="fine-divider"><span>✧</span></div><p class="hero-date" lang="en" id="hero-date">20 AUGUST 2027</p><p class="hero-location" lang="en" data-address>KANDY, SRI LANKA</p><a href="#our-day" class="scroll-cue" lang="en">OUR CELEBRATION <span>↓</span></a>
+        </div>
+      </section>
+      <section class="invitation-wording section-pad"><p class="eyebrow" lang="en">WITH FULL HEARTS & OPEN ARMS</p><h2>ආදරයෙන් කරන ආරාධනයයි</h2><p class="sinhala-body" id="invitation-si">අපගේ ජීවිතයේ සොඳුරුතම දිනය ආදරණීය ඔබ සමඟ බෙදා ගැනීමට, අපගේ විවාහ මංගල්‍යයට සහභාගී වන ලෙස සෙනෙහසින් ආරාධනා කරමු.</p><p class="english-note" id="invitation-en" lang="en">Together with our families, we warmly invite you to share in the joy of our wedding day.</p><svg class="lotus-icon small"><use href="#lotus"/></svg></section>
+      <section id="our-day" class="day-section section-pad"><div class="section-heading"><p class="eyebrow" lang="en">A DAY TO REMEMBER</p><h2 data-copy="daySi">අපේ සොඳුරු දිනය</h2><p class="english-note" lang="en">The wedding day</p></div><div class="day-layout"><div class="date-card"><p class="eyebrow" id="date-weekday" lang="en">FRIDAY</p><span class="date-number" id="date-number">20</span><p class="date-month" id="date-month" lang="en">August 2027</p><div class="fine-divider"><span>✧</span></div></div><ol class="timeline" id="timeline"><li><time>9:00 AM</time><div><h3>අමුත්තන් පිළිගැනීම</h3><p lang="en">A warm welcome</p></div></li><li><time>9:30 AM</time><div><h3>පෝරුවේ චාරිත්‍ර</h3><p lang="en">Poruwa ceremony</p></div></li><li><time>11:00 AM</time><div><h3>මංගල උත්සවය</h3><p lang="en">Wedding reception</p></div></li><li><time>12:30 PM</time><div><h3>දිවා භෝජන සංග්‍රහය</h3><p lang="en">Lunch & celebration</p></div></li></ol></div></section>
+      <section class="venue-section section-pad" id="venue"><div class="venue-art"><img src="images/lotus_flame_animated.gif" loading="lazy" alt="Pink lotus with a gently flickering flame" width="422" height="284"></div><div class="venue-content"><p class="eyebrow" lang="en">WHERE OUR FOREVER BEGINS</p><h2 data-copy="venueSi">සොඳුරු හමුවීමක ඇරඹුම</h2><svg class="lotus-icon small"><use href="#lotus"/></svg><h3 class="venue-name" id="venue-name" lang="en">Nelum Garden</h3><p class="venue-suffix" id="venue-suffix" lang="en">Reception Hall</p><p data-address lang="en">Kandy, Sri Lanka</p><a class="button outline directions" href="https://www.google.com/maps/search/?api=1&query=Kandy%2C+Sri+Lanka" target="_blank" rel="noopener noreferrer">ගමන් මඟ <span lang="en">Get directions ↗</span></a><p class="sample-note" data-demo lang="en">Fictional demonstration venue · Map shows Kandy.</p></div></section>
+      <section class="rsvp-section section-pad" id="rsvp"><p class="eyebrow" lang="en">A SEAT SAVED, JUST FOR YOU</p><h2 data-copy="rsvpSi">ඔබත් අප සමඟ එක්වන්න</h2><p class="sinhala-body" data-copy="rsvpBodySi">ඔබගේ පැමිණීම අපට මහත් සතුටකි. කරුණාකර ඔබගේ සහභාගීත්වය දන්වන්න.</p><p class="english-note" lang="en">We would love to celebrate with you.<br>Kindly reply by <span id="rsvp-deadline">1 August 2027</span>.</p><button class="button rsvp-button js-only">පැමිණීම දන්වන්න <span lang="en">RSVP via WhatsApp ↗</span></button><p class="contact-note" lang="en" id="contact-display">+94 7X XXX XXXX · Demo contact</p><noscript><p>The RSVP contact is pending. Please contact the inviting family directly.</p></noscript></section>
+      <footer class="closing"><svg class="lotus-icon"><use href="#lotus"/></svg><h2 data-copy="closingSi">ඔබගේ පැමිණීම අපට ආශීර්වාදයකි.</h2><p class="english-note" lang="en" data-copy="closingEn">Our day will be more beautiful with you.</p><p class="signature" lang="en"><span data-first>Chathuranga</span> & <span data-second>Chethana</span></p><p class="eyebrow" lang="en">WITH LOVE, ALWAYS</p></footer>
+    </main><nav class="mobile-actions" aria-label="Guest actions"><a class="directions" href="https://www.google.com/maps/search/?api=1&query=Kandy%2C+Sri+Lanka" target="_blank" rel="noopener noreferrer">ගමන් මඟ <span lang="en">Directions · sample</span></a><button class="rsvp-button js-only">පැමිණීම දන්වන්න <span lang="en">RSVP</span></button></nav>
+  </div>
+  <dialog id="rsvp-dialog"><button class="dialog-close" id="close-dialog" aria-label="Close">×</button><svg class="lotus-icon"><use href="#lotus"/></svg><h2>ඔබගේ පැමිණීම අපට සතුටකි</h2><p lang="en">Our invitation is still blooming.</p><p lang="en">This is a demonstration. The family’s WhatsApp contact will be added soon. No message has been sent.</p><button class="button" id="dialog-done" lang="en">Back to the invitation</button></dialog>
+</body>
+</html>
