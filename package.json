@@ -1,0 +1,1 @@
+{"name":"lotus-wedding-invitation","version":"1.0.0","private":true,"scripts":{"start":"node server.mjs","check":"node --check app.js && node --check config.js && node --check server.mjs"}}
